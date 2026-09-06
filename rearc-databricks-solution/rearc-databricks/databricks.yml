@@ -1,0 +1,53 @@
+bundle:
+  name: rearc-data-quest
+variables:
+  catalog:
+    default: workspace
+  schema:
+    default: rearc_quest
+  contact_email:
+    description: Real owner email required for the BLS contact User-Agent
+resources:
+  pipelines:
+    quest:
+      name: rearc-data-quest
+      catalog: ${var.catalog}
+      schema: ${var.schema}
+      serverless: true
+      continuous: false
+      channel: CURRENT
+      libraries:
+        - file:
+            path: ./pipelines/quest_pipeline.py
+      configuration:
+        quest.raw_root: /Volumes/${var.catalog}/${var.schema}/raw/rearc
+  jobs:
+    quest_workflow:
+      name: rearc-data-quest-workflow
+      max_concurrent_runs: 1
+      tasks:
+        - task_key: ingest
+          notebook_task:
+            notebook_path: ./notebooks/01_ingest.py
+            base_parameters:
+              catalog: ${var.catalog}
+              schema: ${var.schema}
+              contact_email: ${var.contact_email}
+              volume: raw
+        - task_key: pipeline
+          depends_on:
+            - task_key: ingest
+          pipeline_task:
+            pipeline_id: ${resources.pipelines.quest.id}
+        - task_key: validate
+          depends_on:
+            - task_key: pipeline
+          notebook_task:
+            notebook_path: ./notebooks/02_validate.py
+            base_parameters:
+              catalog: ${var.catalog}
+              schema: ${var.schema}
+targets:
+  dev:
+    default: true
+    mode: development

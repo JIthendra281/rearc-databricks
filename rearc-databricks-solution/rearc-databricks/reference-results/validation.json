@@ -1,0 +1,24 @@
+{
+  "environment": "Local Apache Spark 4.1.0; not executed in Databricks",
+  "snapshot_id": "20260906T062156898682Z_a213c3f8",
+  "source_files": 13,
+  "observations": 77126,
+  "series": 282,
+  "population_years": 11,
+  "quarantine_observations": 0,
+  "quarantine_population": 0,
+  "outputs": {
+    "q1_population_stats": {
+      "row_count": 1,
+      "sql_pyspark_parity": "passed"
+    },
+    "q2_best_year": {
+      "row_count": 282,
+      "sql_pyspark_parity": "passed"
+    },
+    "q3_value_population": {
+      "row_count": 39,
+      "sql_pyspark_parity": "passed"
+    }
+  }
+}

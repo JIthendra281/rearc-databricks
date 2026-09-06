@@ -1,0 +1,80 @@
+[
+  {
+    "source_name": "population.json",
+    "url": "https://honolulu-api.datausa.io/tesseract/data.jsonrecords?cube=acs_yg_total_population_1&drilldowns=Year%2CNation&locale=en&measures=Population",
+    "sha256": "f3da02ab68ae157c96f24caff60c8145e978059bb604f9e5eb394ee40b6eb85d",
+    "bytes": 1401
+  },
+  {
+    "source_name": "pr.class",
+    "url": "https://download.bls.gov/pub/time.series/pr/pr.class",
+    "sha256": "ed5e7641b5b990460f02a3189b22b48535abcdf3eb505ebfe820ef4c7a288bc9",
+    "bytes": 102
+  },
+  {
+    "source_name": "pr.contacts",
+    "url": "https://download.bls.gov/pub/time.series/pr/pr.contacts",
+    "sha256": "6dfd5df62764766e9afe10b2de7ae8e1b8d372e44c2809f5bf292ee788b2d30a",
+    "bytes": 562
+  },
+  {
+    "source_name": "pr.data.0.Current",
+    "url": "https://download.bls.gov/pub/time.series/pr/pr.data.0.Current",
+    "sha256": "5d43083f802cf1745778734529256d4ebd3a4a11ae44a36463837149994e46b6",
+    "bytes": 1615931
+  },
+  {
+    "source_name": "pr.data.1.AllData",
+    "url": "https://download.bls.gov/pub/time.series/pr/pr.data.1.AllData",
+    "sha256": "bf93b8a24a3c2e7e51d0dfe96536c20566ea3b3a05c7a45bb08c9ac123829d89",
+    "bytes": 3239525
+  },
+  {
+    "source_name": "pr.duration",
+    "url": "https://download.bls.gov/pub/time.series/pr/pr.duration",
+    "sha256": "d1132a2ac0a27c12a1bb82538be3cb5ba1dfaa3eb6951feb8caba5d99202e97f",
+    "bytes": 176
+  },
+  {
+    "source_name": "pr.footnote",
+    "url": "https://download.bls.gov/pub/time.series/pr/pr.footnote",
+    "sha256": "29f9274a6e9da7dfc5e2258144d9edbaed34cbe02d852c82aab20c2e8ac3148b",
+    "bytes": 40
+  },
+  {
+    "source_name": "pr.measure",
+    "url": "https://download.bls.gov/pub/time.series/pr/pr.measure",
+    "sha256": "459c07d625b60430028569cf37f20c4b618f3de0ece5756ef6fa034cbeb594c6",
+    "bytes": 745
+  },
+  {
+    "source_name": "pr.period",
+    "url": "https://download.bls.gov/pub/time.series/pr/pr.period",
+    "sha256": "2a73359647de19a1fc85b2db5002d7efdda291005a501bfe432749c60bce0b2c",
+    "bytes": 146
+  },
+  {
+    "source_name": "pr.seasonal",
+    "url": "https://download.bls.gov/pub/time.series/pr/pr.seasonal",
+    "sha256": "5ebe468ab3cbcfdd6b19b81f34af9281dd4728e891d78192f35de3a5bd9d7b24",
+    "bytes": 79
+  },
+  {
+    "source_name": "pr.sector",
+    "url": "https://download.bls.gov/pub/time.series/pr/pr.sector",
+    "sha256": "1eaef7fb47ac5accc468ff39c4e8916f575a644a009ee66ef8dbd188fe54e369",
+    "bytes": 263
+  },
+  {
+    "source_name": "pr.series",
+    "url": "https://download.bls.gov/pub/time.series/pr/pr.series",
+    "sha256": "fe94825be4ce9c418b07180cb745b69f4e93f08636b27e7583d2fb5094ffb3b6",
+    "bytes": 15657
+  },
+  {
+    "source_name": "pr.txt",
+    "url": "https://download.bls.gov/pub/time.series/pr/pr.txt",
+    "sha256": "b7f467e31ac363f153da1bf21617e850e196da5c12ceef556d5dffd6bff334e3",
+    "bytes": 18343
+  }
+]
